@@ -1,0 +1,21 @@
+{
+	"nodes":[
+		{"id":"1b1b54cb8fab4420","type":"text","text":"colect1","x":-142,"y":-20,"width":122,"height":50},
+		{"id":"094f5317eeb3df0f","type":"text","text":"colect2","x":-142,"y":60,"width":122,"height":50},
+		{"id":"f85abd4e222cdbbb","type":"text","text":"delivery1","x":220,"y":-20,"width":140,"height":50},
+		{"id":"336142af2cd7c5d5","type":"text","text":"no services efp-configoptical PE_01-N-NPE-01 Bundle-Ether 36 2813\nno services pw-configuration PE_01-N-NPE-01 10951\ncommit no-networking","x":-760,"y":-160,"width":590,"height":100},
+		{"id":"cc4aec11d8869a58","type":"text","text":"no services efp-configoptical MI_16-E-NPE-02 TenGigE 0/2/0/1 2813\nno services pw-configuration MI_16-E-NPE-02 10951\ncommit no-networking","x":360,"y":-160,"width":590,"height":100},
+		{"id":"f14acd7cb6fb66a3","type":"text","text":"no services mclag-ip PE_01-N-NPE-02 Bundle-Ether 36","x":-780,"y":420,"width":520,"height":57},
+		{"id":"0b5fa4f6e275cf1b","type":"text","text":"no services mclag-ip PE_01-N-NPE-01 Bundle-Ether 36","x":-780,"y":340,"width":520,"height":50},
+		{"id":"274c7aeb814f9140","type":"text","text":"no services mclag-ip MI_16-E-NPE-01 TenGigE 0/2/0/1\ncommit no-networking","x":-790,"y":520,"width":540,"height":55}
+	],
+	"edges":[
+		{"id":"43d6ac6491ee66d1","fromNode":"1b1b54cb8fab4420","fromSide":"left","toNode":"094f5317eeb3df0f","toSide":"left","label":"MC Lag"},
+		{"id":"f7f77127454dddfc","fromNode":"1b1b54cb8fab4420","fromSide":"right","toNode":"f85abd4e222cdbbb","toSide":"left"},
+		{"id":"c7ac265e19eeade4","fromNode":"336142af2cd7c5d5","fromSide":"right","toNode":"1b1b54cb8fab4420","toSide":"top"},
+		{"id":"b7f628b0de9738e2","fromNode":"cc4aec11d8869a58","fromSide":"left","toNode":"f85abd4e222cdbbb","toSide":"top"},
+		{"id":"38aa430d264c77e9","fromNode":"f14acd7cb6fb66a3","fromSide":"right","toNode":"094f5317eeb3df0f","toSide":"bottom"},
+		{"id":"a10bd5ee97beff29","fromNode":"0b5fa4f6e275cf1b","fromSide":"right","toNode":"1b1b54cb8fab4420","toSide":"left"},
+		{"id":"7751a6e089e95ec2","fromNode":"274c7aeb814f9140","fromSide":"right","toNode":"f85abd4e222cdbbb","toSide":"bottom"}
+	]
+}
